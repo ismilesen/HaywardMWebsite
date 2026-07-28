@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Masjid As-Sunnah in Hayward, California. View today's prayer and iqamah times, Jumu'ah information, announcements, and directions."
+  >
+  <title>Masjid As-Sunnah | Hayward, California</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/prayer-times.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Masjid As-Sunnah home">
+        <img
+          src="assets/masjid-as-sunnah-logo.jpeg"
+          alt="Masjid As-Sunnah logo"
+          class="brand-logo"
+        >
+        <span class="brand-copy">
+          <strong>Masjid As-Sunnah</strong>
+          <small>Hayward, California</small>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        aria-label="Open navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation">
+        <a href="#prayer-times">Prayer Times</a>
+        <a href="#jummah">Jumu'ah</a>
+        <a href="#announcements">Announcements</a>
+        <a href="#about">About</a>
+        <a
+          class="nav-directions"
+          href="https://www.google.com/maps/search/?api=1&query=85+Jackson+St%2C+Hayward%2C+CA+94544"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Directions
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">Welcome to</p>
+          <h1 id="hero-title">Masjid As-Sunnah</h1>
+          <p class="arabic-name" lang="ar" dir="rtl">مَسْجِدُ السُّنَّةِ</p>
+          <p class="hero-description">
+            Serving Hayward and the greater San Francisco Bay Area through prayer,
+            knowledge, worship, and community.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#prayer-times">View Prayer Times</a>
+            <a
+              class="button button-secondary"
+              href="https://www.google.com/maps/search/?api=1&query=85+Jackson+St%2C+Hayward%2C+CA+94544"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get Directions
+            </a>
+          </div>
+
+          <a
+            class="hero-address"
+            href="https://www.google.com/maps/search/?api=1&query=85+Jackson+St%2C+Hayward%2C+CA+94544"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span aria-hidden="true">⌖</span>
+            85 Jackson St, Hayward, CA 94544
+          </a>
+        </div>
+
+        <aside class="next-prayer-card" aria-live="polite">
+          <p class="card-kicker">Next Prayer</p>
+          <h2 id="next-prayer-name">Loading...</h2>
+
+          <div class="next-prayer-times">
+            <div>
+              <span>Adhan</span>
+              <strong id="next-prayer-adhan">--:--</strong>
+            </div>
+            <div>
+              <span>Iqamah</span>
+              <strong id="next-prayer-iqamah">--:--</strong>
+            </div>
+          </div>
+
+          <div class="countdown-wrap">
+            <span>Time remaining</span>
+            <strong id="next-prayer-countdown">--:--:--</strong>
+          </div>
+
+          <p class="date-line" id="date-line">Loading today's date...</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="prayer-section section" id="prayer-times" aria-labelledby="prayer-heading">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow eyebrow-dark">Daily Schedule</p>
+            <h2 id="prayer-heading">Today's Prayer Times</h2>
+          </div>
+
+          <div class="schedule-status">
+            <span class="status-dot" id="api-status-dot"></span>
+            <span id="api-status-text">Retrieving prayer times...</span>
+          </div>
+        </div>
+
+        <div class="prayer-table-card">
+          <div class="prayer-table-header" aria-hidden="true">
+            <span>Prayer</span>
+            <span>Adhan</span>
+            <span>Iqamah</span>
+          </div>
+
+          <div class="prayer-list" id="prayer-list">
+            <div class="loading-row">Loading today's schedule...</div>
+          </div>
+        </div>
+
+        <p class="schedule-note">
+          Adhan and iqamah times are synchronized from the masjid’s approved
+          MosquePrayerTimes schedule.
+        </p>
+      </div>
+    </section>
+
+    <section class="info-grid-section section">
+      <div class="container info-grid">
+        <article class="feature-card jummah-card" id="jummah">
+          <div class="feature-icon" aria-hidden="true">☾</div>
+          <p class="eyebrow eyebrow-dark">Friday Prayer</p>
+          <h2>Jumu'ah Schedule</h2>
+
+          <div class="jummah-list" id="jummah-list">
+            <div class="jummah-row">
+              <div>
+                <span>First Jumu'ah</span>
+                <small>Khutbah and prayer</small>
+              </div>
+              <strong>1:15 PM</strong>
+            </div>
+          </div>
+
+          <p class="feature-note">
+            Please arrive early and follow posted parking guidance.
+          </p>
+        </article>
+
+        <article class="feature-card" id="announcements">
+          <div class="feature-icon" aria-hidden="true">✦</div>
+          <p class="eyebrow eyebrow-dark">Community Updates</p>
+          <h2>Announcements</h2>
+
+          <div class="announcement">
+            <span class="announcement-label">Welcome</span>
+            <h3>Masjid As-Sunnah website is under development</h3>
+            <p>
+              Prayer schedules, programs, classes, and community updates will be
+              published here.
+            </p>
+          </div>
+
+          <a class="text-link" href="mailto:info@masjidas-sunnah.org">
+            Contact the masjid
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section section" id="about">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <p class="eyebrow eyebrow-dark">Our Masjid</p>
+          <h2>A place of worship, knowledge, and community</h2>
+          <p>
+            Masjid As-Sunnah serves Muslims in Hayward and across the Bay Area.
+            Our goal is to provide a welcoming space centered on the Qur'an and
+            Sunnah, congregational prayer, beneficial knowledge, and service to
+            the local community.
+          </p>
+
+          <div class="about-actions">
+            <a
+              class="button button-dark"
+              href="https://www.google.com/maps/search/?api=1&query=85+Jackson+St%2C+Hayward%2C+CA+94544"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit the Masjid
+            </a>
+            <a class="text-link" href="mailto:info@masjidas-sunnah.org">Email Us</a>
+          </div>
+        </div>
+
+        <div class="location-card">
+          <span class="location-label">Location</span>
+          <h3>Masjid As-Sunnah</h3>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=85+Jackson+St%2C+Hayward%2C+CA+94544"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            85 Jackson St<br>
+            Hayward, CA 94544
+          </a>
+          <p>San Francisco Bay Area</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/masjid-as-sunnah-logo.jpeg" alt="" aria-hidden="true">
+        <div>
+          <strong>Masjid As-Sunnah</strong>
+          <span>Hayward, California</span>
+        </div>
+      </div>
+
+      <div class="footer-address">
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=85+Jackson+St%2C+Hayward%2C+CA+94544"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          85 Jackson St, Hayward, CA 94544
+        </a>
+      </div>
+
+      <p class="copyright">
+        © <span id="current-year"></span> Masjid As-Sunnah. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <noscript>
+    <div class="noscript-message">
+      JavaScript is required to display live prayer times.
+    </div>
+  </noscript>
+</body>
+</html>

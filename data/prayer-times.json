@@ -1,0 +1,23 @@
+{
+  "source": {
+    "name": "MosquePrayerTimes",
+    "url": "https://mosqueprayertimes.com/widget/Salafimasjid/1/0",
+    "masjidId": "Salafimasjid"
+  },
+  "date": "Monday, July 27, 2026",
+  "dateISO": "2026-07-27",
+  "hijriDate": "Safar 13, 1448",
+  "timezone": "America/Los_Angeles",
+  "updatedAt": "2026-07-27T00:00:00-07:00",
+  "prayers": {
+    "Fajr": {"adhan": "4:43 AM", "iqamah": "5:00 AM"},
+    "Sunrise": {"adhan": "6:08 AM", "iqamah": null},
+    "Dhuhr": {"adhan": "1:15 PM", "iqamah": "1:30 PM"},
+    "Asr": {"adhan": "5:07 PM", "iqamah": "5:30 PM"},
+    "Maghrib": {"adhan": "8:22 PM", "iqamah": "8:32 PM"},
+    "Isha": {"adhan": "9:47 PM", "iqamah": "10:15 PM"}
+  },
+  "jummah": [
+    {"label": "Jumu'ah", "description": "Khutbah and prayer", "time": "1:30 PM"}
+  ]
+}
