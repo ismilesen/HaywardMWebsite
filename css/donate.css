@@ -165,7 +165,7 @@
 .donation-method-card h3 { margin: 0 0 .65rem; font: 700 1.5rem "Libre Baskerville", serif; }
 .donation-method-card p { margin: 0 0 1.25rem; color: #68736e; line-height: 1.7; }
 .method-button { width: 100%; margin-top: auto; text-align: center; }
-.payment-address { display: block; width: 100%; margin-top: auto; padding: .95rem 1rem; overflow-wrap: anywhere; border: 1px dashed rgba(29,75,58,.3); border-radius: 12px; background: #f8f6ef; color: #18382d; font: 600 .95rem "DM Sans", sans-serif; }
+.payment-address { display: block; width: 100%; margin-top: auto; padding: .95rem 1rem; overflow-wrap: anywhere; border: 1px dashed rgba(29,75,58,.3); border-radius: 12px; background: #f8f6ef; color: #bf9000; font: 600 .95rem "DM Sans", sans-serif; }
 .copy-button { width: 100%; margin-top: .75rem; padding: .85rem 1rem; border: 0; border-radius: 10px; background: var(--donation-green); color: white; font: 700 .92rem "DM Sans", sans-serif; cursor: pointer; transition: transform .2s ease, background .2s ease; }
 .copy-button:hover { transform: translateY(-1px); background: #28624d; }
 .copy-button.is-copied { background: var(--donation-gold-dark); }
