@@ -1,0 +1,198 @@
+:root {
+  --donation-gold: #c9a458;
+  --donation-gold-dark: #9b762f;
+  --donation-ink: #15251f;
+  --donation-green: #1d4b3a;
+  --donation-cream: #f7f2e7;
+  --donation-border: rgba(21, 37, 31, 0.14);
+}
+
+.donation-page {
+  background: #fffdf8;
+  color: var(--donation-ink);
+}
+
+.nav-donate {
+  padding: 0.68rem 1rem !important;
+  border-radius: 999px;
+  background: var(--donation-gold);
+  color: #18231f !important;
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(155, 118, 47, 0.22);
+}
+
+.nav-donate:hover,
+.nav-donate:focus-visible,
+.nav-donate.is-current {
+  background: #dfbd73;
+  transform: translateY(-1px);
+}
+
+.donation-hero {
+  position: relative;
+  isolation: isolate;
+  min-height: 650px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    linear-gradient(110deg, rgba(10, 31, 24, 0.95), rgba(22, 64, 48, 0.80)),
+    url("../assets/hayward-aerial.jpeg") center/cover no-repeat;
+}
+
+.donation-hero::after {
+  content: "";
+  position: absolute;
+  inset: auto -10% -38% auto;
+  width: 520px;
+  aspect-ratio: 1;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 50%;
+  box-shadow: 0 0 0 70px rgba(255,255,255,.025), 0 0 0 140px rgba(255,255,255,.018);
+  z-index: -1;
+}
+
+.donation-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 20%, rgba(201, 164, 88, 0.2), transparent 34%);
+  z-index: -1;
+}
+
+.donation-hero-content {
+  width: min(860px, 100%);
+  padding-block: 7.5rem 5.5rem;
+  text-align: center;
+  color: white;
+}
+
+.donation-hero h1,
+.campaign-intro h2,
+.donation-methods-section h2,
+.virtues-section h2,
+.final-donation-cta h2 {
+  font-family: "Libre Baskerville", serif;
+}
+
+.donation-hero h1 {
+  max-width: 790px;
+  margin: 0.45rem auto 1rem;
+  font-size: clamp(2.6rem, 7vw, 5.5rem);
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+}
+
+.donation-hero-lead {
+  max-width: 650px;
+  margin: 0 auto 2.25rem;
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  line-height: 1.7;
+  color: rgba(255,255,255,.86);
+}
+
+.campaign-progress-card {
+  width: min(760px, 100%);
+  margin: 0 auto 2rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 20px;
+  background: rgba(8, 29, 22, 0.62);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 28px 70px rgba(0,0,0,.25);
+}
+
+.campaign-amounts {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: end;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.campaign-amounts > div:last-child { text-align: right; }
+.campaign-amounts span { display: block; margin-bottom: .25rem; color: rgba(255,255,255,.68); font-size: .78rem; text-transform: uppercase; letter-spacing: .11em; }
+.campaign-amounts strong { font-size: clamp(1.25rem, 3vw, 2rem); }
+.campaign-percentage { color: #f1d28f; font-size: clamp(1.35rem, 3vw, 2.1rem); font-weight: 800; text-align: center !important; }
+
+.campaign-progress-track {
+  height: 14px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255,255,255,.13);
+}
+
+.campaign-progress-fill {
+  width: var(--progress, 50%);
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--donation-gold-dark), #f0cf83);
+  transition: width 1.1s cubic-bezier(.2,.8,.2,1);
+}
+
+.donation-hero-button { min-width: 240px; }
+
+.campaign-intro { background: var(--donation-cream); }
+.campaign-intro-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(2rem, 6vw, 6rem); align-items: start; }
+.campaign-intro h2 { margin: .5rem 0 0; max-width: 520px; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.15; }
+.campaign-copy { font-size: 1.05rem; line-height: 1.85; color: #405048; }
+.campaign-copy p:first-child { color: var(--donation-green); }
+
+.donation-methods-section { background: #fffdf8; }
+.donation-heading { align-items: end; }
+.donation-heading > p { max-width: 330px; color: #68736e; }
+.donation-method-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1.35rem; margin-top: 2rem; }
+
+.donation-method-card {
+  position: relative;
+  display: flex;
+  min-height: 320px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: clamp(1.4rem, 3vw, 2rem);
+  border: 1px solid var(--donation-border);
+  border-radius: 22px;
+  background: white;
+  box-shadow: 0 15px 42px rgba(21,37,31,.07);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.donation-method-card:hover { transform: translateY(-4px); border-color: rgba(201,164,88,.65); box-shadow: 0 24px 54px rgba(21,37,31,.11); }
+.featured-method { background: linear-gradient(145deg, #173f31, #0f2d23); color: white; }
+.featured-method p { color: rgba(255,255,255,.72) !important; }
+.method-badge { position: absolute; top: 1.2rem; right: 1.2rem; padding: .35rem .65rem; border-radius: 999px; background: var(--donation-cream); color: #6c582e; font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.method-icon { display: grid; place-items: center; width: 54px; height: 54px; margin-bottom: 1.25rem; border-radius: 16px; background: var(--donation-cream); color: var(--donation-green); font-weight: 800; }
+.donation-method-card h3 { margin: 0 0 .65rem; font: 700 1.5rem "Libre Baskerville", serif; }
+.donation-method-card p { margin: 0 0 1.25rem; color: #68736e; line-height: 1.7; }
+.method-button { width: 100%; margin-top: auto; text-align: center; }
+.payment-address { display: block; width: 100%; margin-top: auto; padding: .95rem 1rem; overflow-wrap: anywhere; border: 1px dashed rgba(29,75,58,.3); border-radius: 12px; background: #f8f6ef; color: #18382d; font: 600 .95rem "DM Sans", sans-serif; }
+.copy-button { width: 100%; margin-top: .75rem; padding: .85rem 1rem; border: 0; border-radius: 10px; background: var(--donation-green); color: white; font: 700 .92rem "DM Sans", sans-serif; cursor: pointer; transition: transform .2s ease, background .2s ease; }
+.copy-button:hover { transform: translateY(-1px); background: #28624d; }
+.copy-button.is-copied { background: var(--donation-gold-dark); }
+
+.virtues-section { background: #f1eee5; }
+.virtues-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1.25rem; margin-top: 2rem; }
+.virtue-card { position: relative; margin: 0; padding: 2rem; border-radius: 20px; background: white; box-shadow: 0 15px 40px rgba(21,37,31,.06); }
+.virtue-number { display: inline-block; margin-bottom: 2rem; color: var(--donation-gold-dark); font-weight: 800; letter-spacing: .08em; }
+.virtue-card p { margin: 0 0 1.5rem; color: #253a31; font: 700 1.18rem/1.7 "Libre Baskerville", serif; }
+.virtue-card cite { color: #758078; font-style: normal; font-size: .9rem; }
+
+.final-donation-cta { padding: clamp(5rem, 10vw, 8rem) 0; background: linear-gradient(135deg, #102d23, #1b523e); color: white; text-align: center; }
+.final-donation-inner { max-width: 850px; }
+.final-donation-cta h2 { margin: .6rem auto 1rem; font-size: clamp(2rem, 4.5vw, 4rem); line-height: 1.2; }
+.final-donation-cta p:not(.eyebrow) { max-width: 690px; margin: 0 auto 2rem; color: rgba(255,255,255,.76); font-size: 1.05rem; line-height: 1.8; }
+
+@media (max-width: 820px) {
+  .campaign-intro-grid, .donation-method-grid, .virtues-grid { grid-template-columns: 1fr; }
+  .campaign-amounts { grid-template-columns: 1fr 1fr; }
+  .campaign-percentage { grid-column: 1 / -1; grid-row: 2; text-align: left !important; }
+  .campaign-goal { text-align: right !important; }
+  .donation-method-card { min-height: 285px; }
+}
+
+@media (max-width: 560px) {
+  .donation-hero-content { padding-top: 6.5rem; }
+  .campaign-progress-card { padding: 1.1rem; }
+  .campaign-amounts strong { font-size: 1.2rem; }
+  .donation-heading { align-items: flex-start; }
+}
