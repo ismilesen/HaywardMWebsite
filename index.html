@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/prayer-times.js" defer></script>
   <script src="js/main.js" defer></script>
+  <script src="js/home-donation.js" defer></script>
 </head>
 
 <body>
@@ -55,6 +56,7 @@
         <a href="#jummah">Jumu'ah</a>
         <a href="#announcements">Announcements</a>
         <a href="#about">About</a>
+        <a class="nav-donate" href="donate.html">Donate</a>
         <a
           class="nav-directions"
           href="https://www.google.com/maps/search/?api=1&query=83+Jackson+St%2C+Hayward%2C+CA+94544"
@@ -128,6 +130,27 @@
         </aside>
       </div>
     </section>
+    <section class="home-donation-strip" aria-labelledby="home-donation-title">
+  <div class="container home-donation-inner">
+    <div class="home-donation-copy">
+      <p class="eyebrow eyebrow-dark">Help Build the Masjid</p>
+      <h2 id="home-donation-title">Support Masjid As-Salafi</h2>
+      <p>Help establish a masjid upon the Qur'an and authentic Sunnah for Muslims throughout the East Bay.</p>
+    </div>
+
+    <div class="home-donation-progress">
+      <div class="home-donation-stats">
+        <strong><span data-home-raised>$25,000</span> raised</strong>
+        <span><span data-home-percent>50%</span> of <span data-home-goal>$50,000</span></span>
+      </div>
+      <div class="home-progress-track">
+        <div class="home-progress-fill" data-home-progress role="progressbar" aria-label="Fundraising progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+      </div>
+    </div>
+
+    <a class="button button-dark home-donation-button" href="donate.html">Donate Now</a>
+  </div>
+</section>
 
     <section class="prayer-section section" id="prayer-times" aria-labelledby="prayer-heading">
       <div class="container">
@@ -278,5 +301,9 @@
       JavaScript is required to display live prayer times.
     </div>
   </noscript>
+  <a class="floating-donate" href="donate.html" aria-label="Help build Masjid As-Salafi">
+  <span aria-hidden="true">♥</span>
+  <span>Help Build the Masjid</span>
+</a>
 </body>
 </html>
