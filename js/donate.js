@@ -3,7 +3,7 @@
 
   const FALLBACK = {
     campaignTitle: "Help Build Masjid As-Salafi",
-    raised: 29868,
+    raised: 30168,
     goal: 50000,
     launchGoodUrl: "https://www.launchgood.com/v4/campaign/the_salafi_masjid?src=6867116",
     zeffyUrl: "https://www.zeffy.com/fundraising/help-build-a-salafi-masjid-in-the-bay-area",
