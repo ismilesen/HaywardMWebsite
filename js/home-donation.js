@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const FALLBACK = { raised: 29868‎, goal: 50000 };
+  const FALLBACK = { raised: 30168‎, goal: 50000 };
   const money = new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
