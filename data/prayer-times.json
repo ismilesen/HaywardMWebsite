@@ -4,18 +4,18 @@
     "url": "https://mosqueprayertimes.com/widget/Salafimasjid/1/0",
     "masjidId": "Salafimasjid"
   },
-  "date": "Monday, August 10, 2026",
-  "dateISO": "2026-08-10",
-  "hijriDate": "Safar 27, 1448",
+  "date": "Tuesday, August 11, 2026",
+  "dateISO": "2026-08-11",
+  "hijriDate": "Safar 28, 1448",
   "timezone": "America/Los_Angeles",
-  "updatedAt": "2026-08-10T19:30:00-07:00",
+  "updatedAt": "2026-08-11T00:40:05-07:00",
   "prayers": {
     "Fajr": {
-      "adhan": "5:00 AM",
-      "iqamah": "5:05 AM"
+      "adhan": "5:01 AM",
+      "iqamah": "5:06 AM"
     },
     "Sunrise": {
-      "adhan": "6:20 AM",
+      "adhan": "6:21 AM",
       "iqamah": null
     },
     "Dhuhr": {
@@ -27,11 +27,11 @@
       "iqamah": "5:30 PM"
     },
     "Maghrib": {
-      "adhan": "8:08 PM",
-      "iqamah": "8:18 PM"
+      "adhan": "8:06 PM",
+      "iqamah": "8:16 PM"
     },
     "Isha": {
-      "adhan": "9:28 PM",
+      "adhan": "9:27 PM",
       "iqamah": "10:15 PM"
     }
   },
