@@ -4,22 +4,22 @@
     "url": "https://mosqueprayertimes.com/widget/Salafimasjid/1/0",
     "masjidId": "Salafimasjid"
   },
-  "date": "Friday, September 4, 2026",
-  "dateISO": "2026-09-04",
-  "hijriDate": "Rabia I 22, 1448",
+  "date": "Saturday, September 5, 2026",
+  "dateISO": "2026-09-05",
+  "hijriDate": "Rabia I 23, 1448",
   "timezone": "America/Los_Angeles",
-  "updatedAt": "2026-09-04T16:04:09-07:00",
+  "updatedAt": "2026-09-05T08:18:04-07:00",
   "prayers": {
     "Fajr": {
-      "adhan": "5:27 AM",
-      "iqamah": "5:32 AM"
+      "adhan": "5:28 AM",
+      "iqamah": "5:33 AM"
     },
     "Sunrise": {
       "adhan": "6:42 AM",
       "iqamah": null
     },
     "Dhuhr": {
-      "adhan": "1:08 PM",
+      "adhan": "1:07 PM",
       "iqamah": "1:30 PM"
     },
     "Asr": {
@@ -27,11 +27,11 @@
       "iqamah": "5:30 PM"
     },
     "Maghrib": {
-      "adhan": "7:33 PM",
-      "iqamah": "7:43 PM"
+      "adhan": "7:32 PM",
+      "iqamah": "7:42 PM"
     },
     "Isha": {
-      "adhan": "8:48 PM",
+      "adhan": "8:46 PM",
       "iqamah": "10:15 PM"
     }
   },
