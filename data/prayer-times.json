@@ -8,11 +8,11 @@
   "dateISO": "2026-10-01",
   "hijriDate": "Rabia II 20, 1448",
   "timezone": "America/Los_Angeles",
-  "updatedAt": "2026-10-01T17:50:36-07:00",
+  "updatedAt": "2026-10-01T19:33:47-07:00",
   "prayers": {
     "Fajr": {
       "adhan": "5:53 AM",
-      "iqamah": "5:58 AM"
+      "iqamah": "6:15 AM"
     },
     "Sunrise": {
       "adhan": "7:05 AM",
@@ -24,7 +24,7 @@
     },
     "Asr": {
       "adhan": "4:18 PM",
-      "iqamah": "5:30 PM"
+      "iqamah": "4:45 PM"
     },
     "Maghrib": {
       "adhan": "6:52 PM",
@@ -32,7 +32,7 @@
     },
     "Isha": {
       "adhan": "8:03 PM",
-      "iqamah": "10:15 PM"
+      "iqamah": "8:30 PM"
     }
   },
   "jummah": [
