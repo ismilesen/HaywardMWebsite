@@ -118,6 +118,42 @@
     document.getElementById("api-status-text").textContent = text;
   }
 
+  async function refreshPrayerTimes() {
+    try {
+      const response = await fetch(
+        `${DATA_URL}?v=${Date.now()}`,
+        { cache: "no-store" }
+      );
+  
+      if (!response.ok) {
+        throw new Error("Failed to fetch prayer times");
+      }
+  
+      schedule = validate(await response.json());
+  
+      renderPrayers();
+      renderJummah();
+      updateCountdown();
+  
+      document.getElementById("date-line").textContent =
+        [schedule.date, schedule.hijriDate]
+          .filter(Boolean)
+          .join(" • ");
+  
+      const stale = schedule.dateISO !== todayISO();
+  
+      status(
+        stale ? "error" : "live",
+        stale
+          ? `Showing the latest saved schedule for ${schedule.date}`
+          : "Official schedule from MosquePrayerTimes"
+      );
+  
+    } catch (error) {
+      console.error("Prayer time refresh failed:", error);
+    }
+  }
+
   async function start() {
     try {
       const response = await fetch(`${DATA_URL}?v=${Date.now()}`, { cache: "no-store" });
@@ -127,7 +163,7 @@
       renderJummah();
       document.getElementById("date-line").textContent = [schedule.date, schedule.hijriDate].filter(Boolean).join(" • ");
       updateCountdown();
-      setInterval(updateCountdown, 1000);
+      setInterval(refreshPrayerTimes, 15 * 60 * 1000);
       const stale = schedule.dateISO !== todayISO();
       status(stale ? "error" : "live", stale ? `Showing the latest saved schedule for ${schedule.date}` : "Official schedule from MosquePrayerTimes");
     } catch (error) {
