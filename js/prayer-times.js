@@ -163,6 +163,7 @@
       renderJummah();
       document.getElementById("date-line").textContent = [schedule.date, schedule.hijriDate].filter(Boolean).join(" • ");
       updateCountdown();
+      setInterval(updateCountdown, 1000);
       setInterval(refreshPrayerTimes, 15 * 60 * 1000);
       const stale = schedule.dateISO !== todayISO();
       status(stale ? "error" : "live", stale ? `Showing the latest saved schedule for ${schedule.date}` : "Official schedule from MosquePrayerTimes");
