@@ -4,18 +4,18 @@
     "url": "https://mosqueprayertimes.com/widget/Salafimasjid/1/0",
     "masjidId": "Salafimasjid"
   },
-  "date": "Sunday, October 18, 2026",
-  "dateISO": "2026-10-18",
-  "hijriDate": "Jumaada I 7, 1448",
+  "date": "Monday, October 19, 2026",
+  "dateISO": "2026-10-19",
+  "hijriDate": "Jumaada I 8, 1448",
   "timezone": "America/Los_Angeles",
-  "updatedAt": "2026-10-18T18:26:07-07:00",
+  "updatedAt": "2026-10-19T00:55:11-07:00",
   "prayers": {
     "Fajr": {
-      "adhan": "6:08 AM",
+      "adhan": "6:09 AM",
       "iqamah": "6:25 AM"
     },
     "Sunrise": {
-      "adhan": "7:20 AM",
+      "adhan": "7:21 AM",
       "iqamah": null
     },
     "Dhuhr": {
@@ -23,15 +23,15 @@
       "iqamah": "1:30 PM"
     },
     "Asr": {
-      "adhan": "4:00 PM",
+      "adhan": "3:59 PM",
       "iqamah": "4:30 PM"
     },
     "Maghrib": {
-      "adhan": "6:27 PM",
-      "iqamah": "6:37 PM"
+      "adhan": "6:26 PM",
+      "iqamah": "6:36 PM"
     },
     "Isha": {
-      "adhan": "7:39 PM",
+      "adhan": "7:38 PM",
       "iqamah": "8:30 PM"
     }
   },
