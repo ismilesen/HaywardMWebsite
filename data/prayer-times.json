@@ -8,7 +8,7 @@
   "dateISO": "2026-10-22",
   "hijriDate": "Jumaada I 11, 1448",
   "timezone": "America/Los_Angeles",
-  "updatedAt": "2026-10-22T16:27:37-07:00",
+  "updatedAt": "2026-10-22T22:02:59-07:00",
   "prayers": {
     "Fajr": {
       "adhan": "6:12 AM",
@@ -24,7 +24,7 @@
     },
     "Asr": {
       "adhan": "3:56 PM",
-      "iqamah": "4:30 PM"
+      "iqamah": "4:15 PM"
     },
     "Maghrib": {
       "adhan": "6:22 PM",
