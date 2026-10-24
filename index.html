@@ -58,15 +58,23 @@
         <a href="#announcements">Announcements</a>
         <a href="#about">About</a>
         <a class="nav-donate" href="donate.html">Donate</a>
-        <a
-          class="nav-directions"
-          href="https://www.google.com/maps/place/Masjid+As+Salafi/@37.6570233,-122.0866642,17z/data=!4m2!3m1!1s0x808f9101df1e5c87:0x87262dd9dd74c1c"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Directions
+        <div class="directions-dropdown">
+    <button class="directions-btn" onclick="toggleDirections(this)">
+        Get Directions ▾
+    </button>
+
+    <div class="directions-menu">
+        <a href="https://www.google.com/maps/search/?api=1&query=Masjid+As+Salafi+Hayward"
+           target="_blank" rel="noopener noreferrer">
+            Google Maps
         </a>
-            <a class="apple-maps-link" href="https://maps.apple.com/place?place-id=IAC349489776F3738&amp;address=83+Jackson+St%2C+Hayward%2C+CA++94544%2C+United+States&amp;coordinate=37.657020%2C-122.086682&amp;name=Masjid+As-Salafi&amp;_provider=9902" target="_blank" rel="noopener noreferrer" aria-label="Open Masjid As-Salafi in Apple Maps">Apple Maps ↗</a>
+
+        <a href="https://maps.apple.com/place?place-id=IAC349489776F3738"
+           target="_blank" rel="noopener noreferrer">
+            Apple Maps
+        </a>
+    </div>
+</div>
       </nav>
     </div>
   </header>
