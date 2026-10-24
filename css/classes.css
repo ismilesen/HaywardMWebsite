@@ -1,0 +1,56 @@
+/* Dedicated weekly classes page */
+.classes-hero { padding: 88px 0 78px; color: var(--white); background: linear-gradient(125deg, var(--forest-950), var(--forest-800)); }
+.classes-hero .eyebrow { color: var(--gold-300); }
+.classes-hero h1 { font-family: "Libre Baskerville", Georgia, serif; font-size: clamp(2.3rem, 5vw, 4rem); line-height: 1.2; margin: 10px 0 18px; }
+.classes-hero p:last-child { max-width: 640px; color: rgba(255,255,255,.82); font-size: 1.08rem; }
+.classes-list h2 { font-family: "Libre Baskerville", Georgia, serif; font-size: clamp(1.7rem, 3vw, 2.3rem); margin: 8px 0 30px; }
+.class-detail-card { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius-lg); background: white; box-shadow: var(--shadow-sm); }
+.class-poster { background: var(--forest-950); }
+.class-poster img { width: 100%; height: 100%; max-height: 790px; object-fit: contain; }
+.class-information { padding: clamp(26px, 4vw, 58px); align-self: center; }
+.class-information h3 { font-family: "Libre Baskerville", Georgia, serif; font-size: clamp(1.7rem, 3vw, 2.5rem); line-height: 1.3; color: var(--forest-950); margin: 18px 0 8px; }
+.class-subtitle { color: var(--forest-700); font-weight: 700; }
+.class-facts { margin: 30px 0; }
+.class-facts div { padding: 13px 0; border-bottom: 1px solid var(--line); }
+.class-facts dt { font-size: .8rem; color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+.class-facts dd { margin: 4px 0 0; font-weight: 600; }
+@media (max-width: 760px) { .classes-hero { padding: 64px 0; } .class-detail-card { grid-template-columns: 1fr; } .class-poster img { height: auto; max-height: none; } }
+
+/* Class schedule and community photography */
+.classes-hero { position: relative; isolation: isolate; background: #092c24 url('../assets/class-in-session.jpeg') center 48% / cover no-repeat; min-height: 390px; display: flex; align-items: center; }
+.classes-hero::before { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(7,34,28,.94), rgba(7,34,28,.72) 56%, rgba(7,34,28,.45)); }
+.classes-hero-inner { position: relative; }
+.classes-hero .button { margin-top: 22px; }
+.classes-list .class-detail-card { margin: 28px 0 44px; }
+.schedule-intro { max-width: 760px; color: var(--muted); line-height: 1.75; }
+.class-gallery { background: var(--cream-100); }
+.class-gallery h2 { font-family: 'Libre Baskerville', Georgia, serif; font-size: clamp(1.65rem, 3vw, 2.35rem); margin: 8px 0 16px; }
+.class-gallery-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; }
+.class-gallery-grid figure { margin: 0; overflow: hidden; border-radius: var(--radius-lg); background: white; box-shadow: var(--shadow-sm); }
+.class-gallery-grid .gallery-wide { grid-column: 1 / -1; }
+.class-gallery-grid img { width: 100%; height: 330px; object-fit: cover; display: block; }
+.class-gallery-grid .gallery-wide img { height: 360px; }
+.class-gallery-grid figcaption { padding: 14px 20px; font-weight: 600; color: var(--forest-800); }
+@media (max-width: 760px) { .classes-hero { min-height: 340px; } .class-gallery-grid { grid-template-columns: 1fr; } .class-gallery-grid .gallery-wide { grid-column: auto; } .class-gallery-grid img, .class-gallery-grid .gallery-wide img { height: auto; max-height: 340px; object-fit: cover; } }
+
+/* Compact three-column class layout */
+.class-cards-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; align-items: stretch; margin-top: 28px; }
+.classes-list .class-detail-card { display: flex; flex-direction: column; margin: 0; min-width: 0; }
+.class-poster { display: flex; align-items: center; justify-content: center; }
+.class-poster img { display: block; width: 100%; height: auto; max-height: 390px; object-fit: contain; }
+.class-information { padding: 22px; align-self: stretch; display: flex; flex-direction: column; flex: 1; }
+.class-information h3 { font-size: clamp(1.2rem, 1.7vw, 1.55rem); margin: 13px 0 8px; }
+.class-facts { margin: 18px 0; }
+.class-facts div { padding: 9px 0; }
+.class-information .button { margin-top: auto; align-self: flex-start; }
+@media (max-width: 950px) { .class-cards-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 620px) { .class-cards-grid { grid-template-columns: 1fr; } .class-poster img { max-height: 460px; } }
+
+/* Secondary map provider link */
+.apple-maps-link { display: inline-flex; align-items: center; gap: .3rem; margin: 8px 12px 8px 0; color: var(--gold-600, #a37d35); font-weight: 700; font-size: .88rem; text-decoration: underline; text-underline-offset: 3px; }
+.apple-maps-link:hover { text-decoration-thickness: 2px; }
+
+/* Book covers replace event posters on the dedicated classes page */
+.class-poster { padding: 18px; background: #102d26; }
+.class-poster img { width: auto; max-width: 100%; height: 330px; max-height: 330px; object-fit: contain; border-radius: 3px; }
+@media (max-width: 620px) { .class-poster img { height: 340px; max-height: 340px; } }
