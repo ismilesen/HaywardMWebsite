@@ -8,11 +8,11 @@
   "dateISO": "2026-11-01",
   "hijriDate": "Jumaada I 21, 1448",
   "timezone": "America/Los_Angeles",
-  "updatedAt": "2026-11-01T00:39:13-07:00",
+  "updatedAt": "2026-11-01T07:17:38-08:00",
   "prayers": {
     "Fajr": {
       "adhan": "5:21 AM",
-      "iqamah": "12:00 AM"
+      "iqamah": "5:40 AM"
     },
     "Sunrise": {
       "adhan": "6:34 AM",
@@ -20,11 +20,11 @@
     },
     "Dhuhr": {
       "adhan": "11:52 PM",
-      "iqamah": "1:30 PM"
+      "iqamah": "1:00 PM"
     },
     "Asr": {
       "adhan": "2:47 PM",
-      "iqamah": "4:15 PM"
+      "iqamah": "3:15 PM"
     },
     "Maghrib": {
       "adhan": "5:10 PM",
@@ -32,14 +32,14 @@
     },
     "Isha": {
       "adhan": "6:24 PM",
-      "iqamah": "8:00 PM"
+      "iqamah": "7:30 PM"
     }
   },
   "jummah": [
     {
       "label": "Jumu'ah",
       "description": "Khutbah and prayer",
-      "time": "1:15 PM"
+      "time": "12:30 PM"
     }
   ]
 }
