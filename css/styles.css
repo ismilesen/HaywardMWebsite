@@ -1029,8 +1029,8 @@ textarea {
 .classes-preview-copy .button { margin-top: 12px; }
 @media (max-width: 640px) { .classes-preview-card { grid-template-columns: 1fr; gap: 18px; } .classes-preview-card > img { max-height: 290px; object-fit: contain; background: var(--forest-950); } }
 
-/* Three-class homepage preview */
-.home-classes-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-top: 28px; }
+/* Homepage class preview */
+.home-classes-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-top: 28px; }
 .home-class-card { min-width: 0; overflow: hidden; background: white; border: 1px solid var(--line); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); }
 .home-class-card > img { display: block; width: 100%; height: 280px; object-fit: cover; object-position: center 30%; }
 .home-class-copy { padding: 22px; }
@@ -1097,4 +1097,73 @@ textarea {
 
 .directions-menu a:hover {
     background: #f7f2e7;
+}
+
+/* Family welcome, immediately above the daily prayer schedule. */
+.families-section {
+  padding: 32px 0;
+  background: var(--cream-100);
+}
+
+.families-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--gold-500);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.families-copy {
+  padding: 28px 36px;
+}
+
+.families-copy h2 {
+  margin: 0;
+  color: var(--forest-950);
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(1.65rem, 3vw, 2.25rem);
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+
+.families-message {
+  margin: 10px 0 0;
+  color: var(--forest-800);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.families-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  padding: 0 28px 28px;
+}
+
+.families-photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+}
+
+@media (max-width: 640px) {
+  .families-section { padding: 24px 0; }
+  .families-copy { padding: 24px; }
+  .families-gallery {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 0 20px 20px;
+  }
+}
+
+/* Keep the full new class poster visible. */
+.home-class-card-riyad > img {
+  object-fit: contain;
+  object-position: center;
+  background: #080808;
 }
