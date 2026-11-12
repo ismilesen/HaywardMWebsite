@@ -4,18 +4,18 @@
     "url": "https://mosqueprayertimes.com/widget/Salafimasjid/1/0",
     "masjidId": "Salafimasjid"
   },
-  "date": "Wednesday, November 11, 2026",
-  "dateISO": "2026-11-11",
-  "hijriDate": "Jumaada II 1, 1448",
+  "date": "Thursday, November 12, 2026",
+  "dateISO": "2026-11-12",
+  "hijriDate": "Jumaada II 2, 1448",
   "timezone": "America/Los_Angeles",
-  "updatedAt": "2026-11-11T19:55:18-08:00",
+  "updatedAt": "2026-11-12T04:56:14-08:00",
   "prayers": {
     "Fajr": {
-      "adhan": "5:30 AM",
-      "iqamah": "5:50 AM"
+      "adhan": "5:31 AM",
+      "iqamah": "5:51 AM"
     },
     "Sunrise": {
-      "adhan": "6:45 AM",
+      "adhan": "6:46 AM",
       "iqamah": null
     },
     "Dhuhr": {
