@@ -11,7 +11,7 @@ from zoneinfo import ZoneInfo
 import requests
 from bs4 import BeautifulSoup
 
-SOURCE_URL = "https://mosqueprayertimes.com/widget/Salafimasjid/1/0"
+SOURCE_URL = "<iframe src="https://mawaqit.net/en/masjid-as-salafi-hayward-94544-united-states"
 OUTPUT = Path("data/prayer-times.json")
 TZ = ZoneInfo("America/Los_Angeles")
 
